@@ -1,0 +1,309 @@
+/*
+ * ss-table 全局样式
+ */
+
+.ss-config-table {
+  width: 100%;
+  height: 100%;
+}
+.ss-config-table-extend{
+  width: 100%;
+  border-top: 1px solid #ffffff00;
+}
+.ss-config-table-search{
+  height: 37px;
+  width: 100%;
+}
+.ss-config-table-container {
+  width: 100%;
+  background: #ffffff;
+}
+.ss-config-table-pagination {
+  width: 100%;
+  height: 40px;
+}
+
+
+.el-select .el-input {
+  width: 120px;
+}
+.ss-config-table-search-select .el-input-group__prepend {
+  background-color: #fff;
+}
+
+.ss-table-toggle{
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+/*
+ * ss-custom-table 样式
+ */
+.ss-custom {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  font-family: 'Microsoft YaHei';
+}
+.ss-table-main{
+  position: relative;
+}
+
+.ss-custom table {
+  /* height: 100%; */
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  table-layout: fixed;
+  width: 1px;
+}
+
+.ss-custom table th {
+  text-align: center;
+  padding: 4px 4px;
+}
+
+.ss-table-thead table th {
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.ss-custom table td {
+  font-weight: normal;
+  overflow: hidden;
+  padding: 14px 4px;
+  white-space: pre;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+.ss-table {
+  height: 100%;
+}
+
+.ss-table.ss-table-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+}
+
+.ss-table.ss-table-fixed .ss-table-thead,
+.ss-table.ss-table-fixed .ss-table-tbody {
+  overflow: hidden;
+}
+
+.ss-table-thead {
+  position: relative;
+  overflow: hidden;
+}
+
+.ss-table-tbody {
+  position: relative;
+  overflow: auto;
+}
+
+.ss-table-scroll-cell {
+  height: 28px;
+  width: 17px;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.ss-table-summary {
+  height: 44px;
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.ss-table-summary.ss-table-summary-fixed {
+  position: absolute;
+  bottom: 0;
+}
+
+.ss-table-thead th div,
+.ss-table-thead th div span,
+.ss-table-thead th div .ss-table-sort {
+  display: inline-block;
+}
+
+.ss-table-thead th div .ss-table-sort {
+  position: relative;
+  top: 4px;
+  cursor: pointer;
+}
+
+.ss-table-upicon {
+  display: none;
+}
+
+.ss-table-downicon {
+  display: none;
+}
+
+.ss-table-sort .ss-table-defaulticon {
+  display: block;
+}
+
+.ss-table-sort-up .ss-table-upicon {
+  display: block;
+}
+
+.ss-table-sort-down .ss-table-downicon {
+  display: block;
+}
+
+.ss-table-sort-up .ss-table-defaulticon,
+.ss-table-sort-down .ss-table-defaulticon {
+  display: none;
+}
+
+.ss-custom table td.ss-table-tr-group span{
+  display: inline;
+}
+
+.ss-custom table td span {
+  display: block;
+  overflow: hidden;
+  white-space: pre;
+  text-overflow: ellipsis;
+}
+.ss-custom table td span + span {
+  color: #cccccc;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.ss-table-thead-unit{
+  font-weight: normal;
+  font-size: 12px;
+  color: #f5f5f5;
+}
+
+.ss-table-thead-unit sup{
+  font-size: 12px;
+  transform: scale(0.8, 0.75);
+  display: inline-block;
+}
+
+/*无数据***************************/
+
+.ss-table-nodata-text {
+  font-size: 16px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/*加载中***************************/
+
+.ss-table-loading {
+  width: 100%;
+  height: 100%;
+  background: #ffffff3b;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.ss-table-loading-svg {
+  width: 70px;
+  height: 70px;
+  background: url('./assets/loading.svg');
+  background-size: 100% 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.ss-custom .ss-custom-pagination{
+  height: 35px;
+  padding: 0;
+}
+
+.ss-custom table td.ss-table-tr-group{
+  text-align: left;
+  cursor: pointer;
+}
+
+.ss-custom table td.ss-table-tr-group .iconfont{
+  margin-right: 5px;
+}
+
+.ss-table-tr-group-level-0{
+  text-indent: 5px;
+}
+.ss-table-tr-group-level-1{
+  text-indent: 20px;
+}
+.ss-table-tr-group-level-2{
+  text-indent: 35px;
+}
+.ss-table-tr-group-level-3{
+  text-indent: 50px;
+}
+.ss-table-tr-group-level-4{
+  text-indent: 65px;
+}
+/*滚动条***************************/
+/* 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  background: #f7f7f7;
+  box-shadow: inset 0 0 6px #d1cfcf;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #d1cfcf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cee7fd;
+} */
+
+
+
+/**
+ * ss-element-table 样式
+ */
+.ss-element {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  font-family: 'Microsoft YaHei';
+}
+
+.ss-element .el-table__body-wrapper {
+  overflow-y: auto;
+}
+
+.ss-element .ss-element-pagination{
+  height: 35px;
+  padding: 0;
+}
+

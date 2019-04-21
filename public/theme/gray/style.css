@@ -1,0 +1,71 @@
+/**
+ * ss-custom-table 灰色样式
+ */
+
+.ss-table-thead table th {
+  background: #f5f7fa;
+  color: #606266;
+  /* border-bottom: 1px solid #ebeef5; */
+}
+
+.ss-table-tbody table tr {
+  color: #606266;
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.ss-table-summary table tr {
+  color: #606266;
+  border-top: 1px solid #ebeef5;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.ss-table-tbody table td {
+  background: #ffffff;
+}
+
+.ss-custom-border .ss-table-thead th {
+  border-right: 1px solid #ebeef5;
+}
+
+.ss-custom-border .ss-table-tbody td {
+  border-right: 1px solid #ebeef5;
+}
+
+.ss-custom-border .ss-table-summary table td {
+  border-right: 1px solid #ebeef5;
+}
+
+.ss-table-summary table td {
+  background: #f5f7fa;
+}
+/* 排序按钮 */
+.ss-table-thead th div .ss-table-sort:hover {
+  color: #008ed2;
+}
+
+.ss-table-upicon {
+  color: #008ed2;
+}
+
+.ss-table-downicon {
+  color: #008ed2;
+}
+.ss-table-sort .ss-table-defaulticon {
+  color: #bbbbbb;
+}
+
+/* 鼠标悬停行变色 */
+.ss-table-tbody table .ss-table-tr-hover td{
+  background: #ecf5ff;
+}
+
+/**
+ * ss-element-table 灰色样式
+ */
+
+.ss-element .el-table--border th{
+  background: #f5f7fa;
+  color: #606266;
+}
+

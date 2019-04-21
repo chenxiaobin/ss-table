@@ -1,0 +1,39 @@
+{
+  "name": "@idev1/ss-table",
+  "description": "通用表格组件, vue-cli3.0",
+  "version": "0.2.15",
+  "author": "cxb <cxb@strongsoft.net>",
+  "license": "MIT",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@idev1/ss-handle": "^0.1.26",
+    "@idev1/ss-view": "^0.2.75",
+    "element-ui": "^2.4.6",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "velocity-animate": "^1.5.2",
+    "vue": "^2.5.17",
+    "vue-infinite-loading": "^2.3.3",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/eslint-config-standard": "^3.0.1",
+    "node-sass": "^4.9.0",
+    "postcss-import": "^12.0.0",
+    "postcss-url": "^8.0.0",
+    "reset.css": "^2.0.2",
+    "sass-loader": "^7.0.1",
+    "vue-codemirror": "^4.0.5",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
