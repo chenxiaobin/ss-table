@@ -46,7 +46,6 @@
   height: 100%;
   position: relative;
   text-align: center;
-  font-family: 'Microsoft YaHei';
 }
 .ss-table-main{
   position: relative;
@@ -63,18 +62,19 @@
 
 .ss-custom table th {
   text-align: center;
-  padding: 4px 4px;
+  padding: 6px 4px;
 }
 
 .ss-table-thead table th {
   box-sizing: border-box;
   vertical-align: middle;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .ss-custom table td {
   font-weight: normal;
   overflow: hidden;
-  padding: 14px 4px;
   white-space: pre;
   text-overflow: ellipsis;
   cursor: default;
@@ -117,7 +117,7 @@
 }
 
 .ss-table-summary {
-  height: 44px;
+  height: 43px;
   position: relative;
   bottom: 0;
   overflow: hidden;
@@ -128,6 +128,10 @@
   bottom: 0;
 }
 
+.ss-custom .ss-table-summary table td{
+  padding: 8px 4px;
+}
+
 .ss-table-thead th div,
 .ss-table-thead th div span,
 .ss-table-thead th div .ss-table-sort {
@@ -136,7 +140,7 @@
 
 .ss-table-thead th div .ss-table-sort {
   position: relative;
-  top: 4px;
+  top: 1px;
   cursor: pointer;
 }
 
@@ -220,9 +224,6 @@
 }
 
 .ss-table-loading-svg {
-  width: 70px;
-  height: 70px;
-  background: url('./assets/loading.svg');
   background-size: 100% 100%;
   top: 50%;
   left: 50%;
@@ -232,6 +233,19 @@
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   position: absolute;
+}
+.ss-table-loading-svg.iconfont.ss-icon-jiazai::before{
+  font-size: 35px;
+  display: inline-block;
+  text-indent: 0px;
+  animation:turn 1s linear infinite;
+}
+@keyframes turn{
+  0%{-webkit-transform:rotate(0deg);}
+  25%{-webkit-transform:rotate(90deg);}
+  50%{-webkit-transform:rotate(180deg);}
+  75%{-webkit-transform:rotate(270deg);}
+  100%{-webkit-transform:rotate(360deg);}
 }
 
 .ss-custom .ss-custom-pagination{
@@ -286,24 +300,22 @@
 } */
 
 
-
 /**
- * ss-element-table 样式
+ * 右侧固定列样式
  */
-.ss-element {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  text-align: center;
-  font-family: 'Microsoft YaHei';
+.ss-table.ss-table-fixed-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: auto;
 }
 
-.ss-element .el-table__body-wrapper {
-  overflow-y: auto;
+.ss-table.ss-table-fixed-right .ss-table-thead,
+.ss-table.ss-table-fixed-right .ss-table-tbody {
+  overflow: hidden;
 }
 
-.ss-element .ss-element-pagination{
-  height: 35px;
-  padding: 0;
+.ss-table-summary.ss-table-summary-fixed-right {
+  position: absolute;
+  bottom: 0;
 }
-

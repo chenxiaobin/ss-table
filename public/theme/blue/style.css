@@ -24,15 +24,18 @@
 }
 
 .ss-custom-border .ss-table-thead th {
-  border-right: 1px solid #33a3df;
+  border-right: 1px solid #5596d3; 
+  border-bottom: 1px solid #5596d3; 
+  /* #33a3df; */
 }
 
 .ss-custom-border .ss-table-tbody td {
-  border-right: 1px solid #33a3df;
+  border-right: 1px solid #e2e4e7;
+  border-bottom: 1px solid #ebeef5;
 }
 
 .ss-custom-border .ss-table-summary table td {
-  border-right: 1px solid #33a3df;
+  border-right: 1px solid #5596d3;
 }
 
 .ss-table-summary table td {
@@ -61,8 +64,12 @@
 }
 /*隔行变色*/
 .ss-config-table-container .ss-table-tr-odd td{
-  background: #F1F5F9;
+  background: #f9f9f9;
 }
+.ss-config-table-container .ss-table-tr-odd td.special-cell-rowspan{
+  background: #ffffff;
+}
+
 
 /**
  * ss-element-table 灰色样式

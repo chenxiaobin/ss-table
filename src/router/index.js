@@ -7,31 +7,33 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Table',
-      component: resolve => require(['@/mock/doc-example/table'], resolve)
+      name: 'example0',
+      component: resolve => require(['@/example/index'], resolve)
+    },
+    {
+      path: '/group',
+      name: 'example1',
+      component: resolve => require(['@/example/index-group'], resolve)
+    },
+    {
+      path: '/group2',
+      name: 'example2',
+      component: resolve => require(['@/example/index-group-area'], resolve)
+    },
+    {
+      path: '/group3',
+      name: 'example3',
+      component: resolve => require(['@/example/index-group-parent'], resolve)
     },
     {
       path: '/api',
       name: 'api',
-      component: resolve => require(['@/mock/api-example/example'], resolve)
+      component: resolve => require(['@/example/doc-example/table'], resolve)
     },
     {
-      path: '/areagroup',
-      name: 'areagroup',
-      component: resolve =>
-        require(['@/mock/area-group-example/example'], resolve)
-    },
-    {
-      path: '/simple',
-      name: 'simple',
-      component: resolve =>
-        require(['@/mock/simple-example/simple'], resolve)
-    },
-    {
-      path: '/parentgroup',
-      name: 'parentgroup',
-      component: resolve =>
-        require(['@/mock/parent-group-example/example'], resolve)
+      path: '/examples',
+      name: 'examples',
+      component: resolve => require(['@/example/components-example'], resolve)
     }
   ]
 })

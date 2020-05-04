@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 
-import ssview from '@idev1/ss-view'
-// import '@idev1/ss-view/public/styles/ssview.css'
-Vue.use(ssview)
+// Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 

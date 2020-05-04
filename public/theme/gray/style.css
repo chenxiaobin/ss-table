@@ -3,21 +3,21 @@
  */
 
 .ss-table-thead table th {
-  background: #f5f7fa;
+  background: #f2f2f2;
   color: #606266;
-  /* border-bottom: 1px solid #ebeef5; */
+  /* border-bottom: 1px solid #e6e6e6; */
 }
 
 .ss-table-tbody table tr {
   color: #606266;
-  border-top: 1px solid #ebeef5;
-  border-bottom: 1px solid #ebeef5;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .ss-table-summary table tr {
   color: #606266;
-  border-top: 1px solid #ebeef5;
-  border-bottom: 1px solid #ebeef5;
+  /* border-top: 1px solid #e6e6e6; */
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .ss-table-tbody table td {
@@ -25,15 +25,17 @@
 }
 
 .ss-custom-border .ss-table-thead th {
-  border-right: 1px solid #ebeef5;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .ss-custom-border .ss-table-tbody td {
-  border-right: 1px solid #ebeef5;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .ss-custom-border .ss-table-summary table td {
-  border-right: 1px solid #ebeef5;
+  border-right: 1px solid #e6e6e6;
 }
 
 .ss-table-summary table td {

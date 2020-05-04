@@ -9,6 +9,7 @@ module.exports = {
     config.resolve.alias
       .set('public', path.join(__dirname, 'public'))
       .set('vue$', 'vue/dist/vue.js')
+      .set('@', path.join(__dirname, 'src'))
   },
   // webpack-dev-server 相关配置
   devServer: {
