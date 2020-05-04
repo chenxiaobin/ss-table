@@ -1,0 +1,92 @@
+/**
+ * ss-custom-table 灰色样式
+ */
+
+.ss-table-thead table th {
+  background: #579CDD;
+  color: #ffffff;
+}
+
+.ss-table-tbody table tr {
+  color: #606266;
+  border-top: 1px solid #F1F4F9;
+  border-bottom: 1px solid #F1F4F9;
+}
+
+.ss-table-summary table tr {
+  color: #606266;
+  border-top: 1px solid #F1F4F9;
+  border-bottom: 1px solid #F1F4F9;
+}
+
+.ss-table-tbody table td {
+  background: #ffffff;
+}
+
+.ss-custom-border .ss-table-thead th {
+  border-right: 1px solid #5596d3; 
+  border-bottom: 1px solid #5596d3; 
+  /* #33a3df; */
+}
+
+.ss-custom-border .ss-table-tbody td {
+  border-right: 1px solid #e2e4e7;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.ss-custom-border .ss-table-summary table td {
+  border-right: 1px solid #5596d3;
+}
+
+.ss-table-summary table td {
+  background: #579CDD;
+  color: #ffffff;
+}
+/* 排序按钮 */
+.ss-table-thead th div .ss-table-sort:hover {
+  color: #b4f9e9;
+}
+
+.ss-table-upicon {
+  color: #b4f9e9;
+}
+
+.ss-table-downicon {
+  color: #b4f9e9;
+}
+.ss-table-sort .ss-table-defaulticon {
+  color: #ffffff;
+}
+
+/* 鼠标悬停行变色 */
+.ss-table-tbody table .ss-table-tr-hover td{
+  background: #ecf5ff;
+}
+/*隔行变色*/
+.ss-config-table-container .ss-table-tr-odd td{
+  background: #f9f9f9;
+}
+.ss-config-table-container .ss-table-tr-odd td.special-cell-rowspan{
+  background: #ffffff;
+}
+
+
+/**
+ * ss-element-table 灰色样式
+ */
+
+.ss-element .el-table--border th{
+  background: #f5f7fa;
+  color: #606266;
+}
+
+.ss-element .el-table th{
+  background: #579CDD;
+  color: #ffffff;
+}
+
+.ss-element .el-table__fixed-footer-wrapper tbody td,
+.ss-element .el-table__footer-wrapper tbody td{
+  background: #579CDD;
+  color: #ffffff;
+}
